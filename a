@@ -1,0 +1,61 @@
+-CAInfo
+Displays information about the certification authority.
+
+Windows Command Prompt
+
+Copy
+certutil [options] -CAInfo [InfoName [Index | ErrorCode]]
+Where:
+
+InfoName indicates the CA property to display, based on the following infoname argument syntax:
+* - Displays all properties
+ads - Advanced Server
+aia [Index] - AIA URLs
+cdp [Index] - CDP URLs
+cert [Index] - CA cert
+certchain [Index] - CA cert chain
+certcount - CA cert count
+certcrlchain [Index] - CA cert chain with CRLs
+certstate [Index] - CA cert
+certstatuscode [Index] - CA cert verify status
+certversion [Index] - CA cert version
+CRL [Index] - Base CRL
+crlstate [Index] - CRL
+crlstatus [Index] - CRL Publish Status
+cross- [Index] - Backward cross cert
+cross+ [Index] - Forward cross cert
+crossstate- [Index] - Backward cross cert
+crossstate+ [Index] - Forward cross cert
+deltacrl [Index] - Delta CRL
+deltacrlstatus [Index] - Delta CRL Publish Status
+dns - DNS Name
+dsname - Sanitized CA short name (DS name)
+error1 ErrorCode - Error message text
+error2 ErrorCode - Error message text and error code
+exit [Index] - Exit module description
+exitcount - Exit module count
+file - File version
+info - CA info
+kra [Index] - KRA cert
+kracount - KRA cert count
+krastate [Index] - KRA cert
+kraused - KRA cert used count
+localename - CA locale name
+name - CA name
+ocsp [Index] - OCSP URLs
+parent - Parent CA
+policy - Policy module description
+product - Product version
+propidmax - Maximum CA PropId
+role - Role Separation
+sanitizedname - Sanitized CA name
+sharedfolder - Shared folder
+subjecttemplateoids - Subject Template OIDs
+templates - Templates
+type - CA type
+xchg [Index] - CA exchange cert
+xchgchain [Index] - CA exchange cert chain
+xchgcount - CA exchange cert count
+xchgcrlchain [Index] - CA exchange cert chain with CRLs
+index is the optional zero-based property index.
+errorcode is the numeric error code.
